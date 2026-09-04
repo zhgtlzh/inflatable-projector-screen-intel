@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inflatable Projector Screen × Pattern — Presales Intelligence</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --teal:#00C2A8;--teal-d:#009E88;--teal-glow:rgba(0,194,168,.1);
+  --navy:#080F1C;--navy2:#0D1929;--navy3:#122035;
+  --amber2:#F59E0B;--amber-glow:rgba(245,158,11,.1);
+  --violet:#8B5CF6;--violet-glow:rgba(139,92,246,.1);
+  --t1:#F0F4F8;--t2:#8EA8C3;--t3:#4A6A8A;
+  --s1:#0D1929;--s2:#112035;--s3:#18294A;
+  --green:#10B981;--amber:#F59E0B;--red:#EF4444;
+  --bdr:rgba(0,194,168,.12);--bdr-amber:rgba(245,158,11,.18);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--navy);color:var(--t1);overflow-x:hidden}
+::-webkit-scrollbar{width:3px}::-webkit-scrollbar-track{background:var(--navy)}
+::-webkit-scrollbar-thumb{background:linear-gradient(var(--teal),var(--amber2));border-radius:2px}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:200;height:56px;background:rgba(8,15,28,.95);backdrop-filter:blur(20px);border-bottom:1px solid var(--bdr);display:flex;align-items:center;justify-content:space-between;padding:0 2rem}
+.nb{display:flex;align-items:center;gap:10px;font-size:.82rem;font-weight:600;cursor:pointer;color:var(--t1)}
+.nlogo{width:26px;height:26px;background:var(--teal);border-radius:5px;display:flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:800;color:var(--navy)}
+.nlinks{display:flex;list-style:none;gap:0}
+.nlinks a{padding:.4rem .75rem;font-size:.75rem;font-weight:500;color:var(--t3);cursor:pointer;border-radius:6px;transition:all .2s;white-space:nowrap}
+.nlinks a:hover,.nlinks a.on{color:var(--teal);background:var(--teal-glow)}
+.season-badge{background:var(--amber-glow);border:1px solid var(--bdr-amber);border-radius:20px;padding:3px 10px;color:var(--amber2);font-size:.72rem;font-weight:700}
+
+.hero{padding:100px 2rem 56px;max-width:1200px;margin:0 auto;position:relative}
+.hero::after{content:'';position:absolute;top:60px;right:-180px;width:500px;height:500px;background:radial-gradient(circle,rgba(245,158,11,.06) 0%,transparent 70%);pointer-events:none}
+.hero-chip{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--bdr);background:var(--teal-glow);border-radius:20px;padding:4px 14px;font-size:.7rem;font-weight:600;color:var(--teal);letter-spacing:.1em;text-transform:uppercase;margin-bottom:1.4rem}
+.hero-chip::before{content:'';width:5px;height:5px;background:var(--teal);border-radius:50%;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.4)}}
+h1{font-size:clamp(2rem,4vw,3.3rem);font-weight:700;line-height:1.15;margin-bottom:1rem}
+h1 em{font-family:'Instrument Serif',serif;font-style:italic;color:var(--amber2)}
+.hero-sub{font-size:.97rem;color:var(--t2);max-width:600px;line-height:1.75;margin-bottom:1.5rem}
+.hero-meta{display:flex;gap:1.5rem;flex-wrap:wrap;font-size:.78rem;color:var(--t3)}
+
+.sw{max-width:1200px;margin:0 auto 2rem;padding:0 2rem}
+.scard{background:linear-gradient(135deg,var(--s1),var(--s2));border:1px solid var(--bdr);border-radius:14px;padding:2rem;display:grid;grid-template-columns:auto 1fr;gap:2.5rem;align-items:center}
+.sleft{text-align:center;border-right:1px solid var(--bdr);padding-right:2.5rem;min-width:140px}
+.bscore{font-size:4.5rem;font-weight:800;color:var(--teal);line-height:1}
+.ssub{font-size:.68rem;text-transform:uppercase;letter-spacing:.12em;color:var(--t3);margin-top:4px}
+.sbadge{display:inline-block;margin-top:.7rem;padding:4px 12px;border-radius:5px;font-size:.72rem;font-weight:600;background:rgba(245,158,11,.12);color:var(--amber2);border:1px solid var(--bdr-amber)}
+.bars{display:grid;grid-template-columns:1fr 1fr;gap:.7rem}
+.br{display:flex;flex-direction:column;gap:4px}
+.bl{display:flex;justify-content:space-between;font-size:.7rem;color:var(--t2)}
+.track{height:5px;background:rgba(255,255,255,.07);border-radius:3px;overflow:hidden}
+.fill{height:100%;border-radius:3px;background:linear-gradient(90deg,var(--teal),var(--teal-d));animation:grow 1.3s ease-out forwards;transform:scaleX(0);transform-origin:left}
+.fill.amber{background:linear-gradient(90deg,var(--amber2),#B45309)}
+.fill.violet{background:linear-gradient(90deg,var(--violet),#5B21B6)}
+@keyframes grow{to{transform:scaleX(1)}}
+
+.pw{max-width:1200px;margin:0 auto;padding:0 2rem .75rem}
+.pills{display:flex;gap:.4rem;flex-wrap:wrap;background:var(--s1);border:1px solid var(--bdr);border-radius:10px;padding:.4rem;width:fit-content}
+.pill{padding:.4rem 1rem;border-radius:7px;font-size:.78rem;font-weight:500;cursor:pointer;color:var(--t2);border:none;background:transparent;transition:all .2s}
+.pill:hover:not(.on){background:var(--teal-glow);color:var(--teal)}
+.pill.on{background:var(--teal);color:var(--navy);font-weight:600}
+
+.sec{max-width:1200px;margin:0 auto;padding:0 2rem 4rem;display:none}
+.sec.on{display:block}
+.sec-hdr{margin-bottom:2rem;border-bottom:1px solid var(--bdr);padding-bottom:1.5rem}
+.sec-tag{font-size:.67rem;text-transform:uppercase;letter-spacing:.14em;color:var(--teal);font-weight:600;margin-bottom:.4rem}
+.sec-tag.amber{color:var(--amber2)}
+h2{font-size:1.7rem;font-weight:700;line-height:1.25}
+h3{font-size:1.02rem;font-weight:600;color:var(--t1);margin-bottom:.6rem}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:1.1rem;margin-bottom:1.75rem}
+.card{background:var(--s1);border:1px solid var(--bdr);border-radius:11px;padding:1.4rem;position:relative;overflow:hidden;transition:border-color .2s,box-shadow .2s}
+.card::before{content:'';position:absolute;top:0;left:0;width:2px;height:100%;background:var(--teal);opacity:0;transition:opacity .2s}
+.card:hover{border-color:rgba(0,194,168,.35);box-shadow:0 4px 24px rgba(0,194,168,.07)}
+.card:hover::before{opacity:1}
+.card.amber-card::before{background:var(--amber2)}
+.card.amber-card:hover{border-color:rgba(245,158,11,.35);box-shadow:0 4px 24px rgba(245,158,11,.08)}
+.card-ico{width:34px;height:34px;background:var(--teal-glow);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1rem;margin-bottom:.9rem}
+.card-ico.amber{background:var(--amber-glow)}
+.val{font-size:1.7rem;font-weight:700;color:var(--teal);line-height:1;margin-bottom:.2rem}
+.val.amber{color:var(--amber2)}
+.desc{font-size:.78rem;color:var(--t2);line-height:1.55}
+
+.blk{background:var(--s1);border:1px solid var(--bdr);border-radius:11px;padding:1.6rem;margin-bottom:1.2rem}
+.blk p{font-size:.875rem;color:var(--t2);line-height:1.78}
+.blk-amber{background:var(--s1);border:1px solid var(--bdr-amber);border-radius:11px;padding:1.6rem;margin-bottom:1.2rem}
+.blk-amber p{font-size:.875rem;color:var(--t2);line-height:1.78}
+
+.tags{display:flex;gap:.45rem;flex-wrap:wrap;margin-top:.85rem}
+.tag{font-size:.7rem;font-weight:500;padding:3px 9px;border-radius:4px;border:1px solid}
+.tg{background:rgba(16,185,129,.08);color:var(--green);border-color:rgba(16,185,129,.25)}
+.ta{background:rgba(245,158,11,.08);color:var(--amber);border-color:rgba(245,158,11,.25)}
+.tr{background:rgba(239,68,68,.08);color:var(--red);border-color:rgba(239,68,68,.25)}
+.tb{background:rgba(0,194,168,.08);color:var(--teal);border-color:rgba(0,194,168,.25)}
+.tv{background:rgba(139,92,246,.08);color:var(--violet);border-color:rgba(139,92,246,.25)}
+
+.tw{background:var(--s1);border:1px solid var(--bdr);border-radius:11px;overflow:hidden;margin-bottom:1.4rem}
+table{width:100%;border-collapse:collapse;font-size:.82rem}
+th{text-align:left;padding:.7rem 1rem;background:var(--s2);color:var(--t3);font-size:.68rem;text-transform:uppercase;letter-spacing:.09em;border-bottom:1px solid var(--bdr)}
+td{padding:.82rem 1rem;border-bottom:1px solid rgba(255,255,255,.04);color:var(--t2);vertical-align:top}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:rgba(0,194,168,.03)}
+
+.two{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
+
+.swot{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--bdr);border-radius:11px;overflow:hidden;margin-bottom:1.75rem}
+.sw2{background:var(--s1);padding:1.4rem}
+.sw2-lbl{font-size:.62rem;text-transform:uppercase;letter-spacing:.14em;font-weight:700;margin-bottom:.7rem}
+.sw2-s .sw2-lbl{color:var(--green)}.sw2-w .sw2-lbl{color:var(--amber)}.sw2-o .sw2-lbl{color:var(--teal)}.sw2-t .sw2-lbl{color:var(--red)}
+.sw2 ul{list-style:none}
+.sw2 ul li{font-size:.8rem;color:var(--t2);padding:.28rem 0 .28rem 1rem;position:relative;line-height:1.5}
+.sw2 ul li::before{content:'—';position:absolute;left:0;color:var(--t3);font-size:.68rem}
+
+.opp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:1.1rem}
+.opp{background:var(--s1);border:1px solid var(--bdr);border-radius:11px;padding:1.4rem;position:relative}
+.opp.amber-opp{border-color:var(--bdr-amber)}
+.pr{position:absolute;top:1rem;right:1rem;font-size:.66rem;font-weight:700;padding:2px 8px;border-radius:4px;text-transform:uppercase;letter-spacing:.06em}
+.pr-hi{background:rgba(16,185,129,.12);color:var(--green)}
+.pr-md{background:rgba(245,158,11,.12);color:var(--amber)}
+.pr-fix{background:rgba(239,68,68,.12);color:var(--red)}
+.opp-num{font-family:'DM Mono',monospace;font-size:.68rem;color:var(--t3);margin-bottom:.45rem}
+.opp h3{font-size:.98rem;margin-bottom:.45rem}
+.opp p{font-size:.8rem;color:var(--t2);line-height:1.65;margin-bottom:.7rem}
+.opp-imp{display:flex;gap:1rem;font-size:.73rem;color:var(--t3);flex-wrap:wrap}
+.opp-imp strong{color:var(--teal)}
+.opp-imp.amber strong{color:var(--amber2)}
+
+.tline{position:relative;padding-left:2rem}
+.tline::before{content:'';position:absolute;left:.45rem;top:0;bottom:0;width:1px;background:var(--bdr)}
+.tl-item{position:relative;margin-bottom:1.75rem}
+.tl-dot{position:absolute;left:-1.7rem;top:.2rem;width:9px;height:9px;border-radius:50%;background:var(--teal);border:2px solid var(--navy);box-shadow:0 0 0 4px rgba(0,194,168,.15)}
+.tl-dot.amber{background:var(--amber2);box-shadow:0 0 0 4px rgba(245,158,11,.15)}
+.tl-date{font-size:.7rem;font-weight:600;color:var(--teal);margin-bottom:.2rem;text-transform:uppercase;letter-spacing:.08em}
+.tl-date.amber{color:var(--amber2)}
+.tl-title{font-size:.93rem;font-weight:600;color:var(--t1);margin-bottom:.35rem}
+.tl-desc{font-size:.8rem;color:var(--t2);line-height:1.6}
+
+.callout{display:flex;gap:.85rem;padding:.9rem 1.2rem;border-radius:8px;margin-bottom:.9rem;font-size:.83rem;line-height:1.65}
+.callout-ico{font-size:1rem;flex-shrink:0;margin-top:2px}
+.c-info{background:rgba(0,194,168,.07);border-left:3px solid var(--teal);color:var(--t2)}
+.c-warn{background:rgba(245,158,11,.07);border-left:3px solid var(--amber);color:var(--t2)}
+.c-red{background:rgba(239,68,68,.07);border-left:3px solid var(--red);color:var(--t2)}
+
+.bchart{display:flex;flex-direction:column;gap:.55rem}
+.brow{display:flex;align-items:center;gap:.7rem}
+.brow-lbl{width:150px;font-size:.77rem;color:var(--t2);text-align:right;flex-shrink:0}
+.brow-fill{height:25px;border-radius:4px;background:linear-gradient(90deg,var(--teal),var(--teal-d));display:flex;align-items:center;padding:0 .5rem;font-size:.7rem;font-weight:600;color:var(--navy);min-width:44px;animation:grow 1s ease-out forwards;transform:scaleX(0);transform-origin:left}
+.brow-fill.amber{background:linear-gradient(90deg,var(--amber2),#B45309)}
+.brow-fill.red{background:linear-gradient(90deg,var(--red),#991B1B);color:#fff}
+
+.painpoint-card{background:var(--s1);border:1px solid rgba(239,68,68,.2);border-radius:10px;padding:1.2rem;margin-bottom:.8rem}
+.painpoint-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:.5rem;flex-wrap:wrap;gap:.5rem}
+.painpoint-name{font-size:.88rem;font-weight:700;color:var(--t1);display:flex;align-items:center;gap:.5rem}
+.painpoint-severity{font-size:.68rem;font-weight:700;padding:2px 9px;border-radius:12px}
+.sev-high{background:rgba(239,68,68,.15);color:var(--red)}
+.sev-med{background:rgba(245,158,11,.15);color:var(--amber)}
+.painpoint-desc{font-size:.8rem;color:var(--t2);line-height:1.65;margin-bottom:.5rem}
+.painpoint-fix{font-size:.77rem;color:var(--teal);font-weight:600}
+
+.cb{display:inline-block;padding:2px 7px;border-radius:4px;font-size:.7rem;font-weight:600}
+.cb-ldr{background:rgba(239,68,68,.12);color:var(--red)}
+.cb-peer{background:rgba(245,158,11,.12);color:var(--amber)}
+.cb-us{background:rgba(0,194,168,.12);color:var(--teal)}
+
+code{font-family:'DM Mono',monospace;font-size:.79em;background:rgba(0,194,168,.08);color:var(--teal);padding:1px 5px;border-radius:3px}
+
+.sec.on>*{animation:fadeUp .35s ease-out forwards;opacity:0}
+.sec.on>*:nth-child(2){animation-delay:.06s}
+.sec.on>*:nth-child(3){animation-delay:.12s}
+.sec.on>*:nth-child(4){animation-delay:.18s}
+@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+footer{max-width:1200px;margin:0 auto;padding:2rem;border-top:1px solid var(--bdr);display:flex;justify-content:space-between;align-items:center;font-size:.73rem;color:var(--t3);flex-wrap:wrap;gap:.5rem}
+.fb{display:flex;align-items:center;gap:8px;color:var(--t2)}
+
+@media(max-width:720px){
+  .two,.swot{grid-template-columns:1fr}
+  .scard{grid-template-columns:1fr}
+  .sleft{border-right:none;border-bottom:1px solid var(--bdr);padding-right:0;padding-bottom:1.5rem}
+  .nlinks{display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nb" onclick="show('overview')">
+    <div class="nlogo">P</div>Pattern Intel
+  </div>
+  <ul class="nlinks">
+    <li><a onclick="show('overview')" id="na-overview" class="on">Overview</a></li>
+    <li><a onclick="show('market')" id="na-market">Market</a></li>
+    <li><a onclick="show('amazon')" id="na-amazon">Amazon Landscape</a></li>
+    <li><a onclick="show('painpoints')" id="na-painpoints">Pain Points</a></li>
+    <li><a onclick="show('competitors')" id="na-competitors">Competitors</a></li>
+    <li><a onclick="show('consumer')" id="na-consumer">Consumer Trends</a></li>
+    <li><a onclick="show('swot')" id="na-swot">SWOT</a></li>
+    <li><a onclick="show('opportunity')" id="na-opportunity">Opportunity</a></li>
+  </ul>
+  <span class="season-badge">☀️ Peak Season: May–Aug</span>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-chip">Presales Intelligence Report</div>
+  <h1>Inflatable Projector Screen <em>× Pattern</em><br>Category Deep-Dive</h1>
+  <p class="hero-sub">Full-spectrum presales dossier on the inflatable outdoor projector screen category — a fast-growing, highly seasonal home entertainment product riding the "backyard cinema" boom. Fragmented competitive landscape, well-documented product pain points, and a clear whitespace for a brand that fixes the category's #1 complaint: wind instability.</p>
+  <div class="hero-meta">
+    <span>📅 July 2026</span>
+    <span>🏷 Category: Outdoor Entertainment / Home Cinema</span>
+    <span>📈 Outdoor Screen Market: $4.2B → $9.1B by 2033</span>
+    <span>📦 Primary Channel: Amazon US (3P), eBay</span>
+  </div>
+</div>
+
+<!-- SCORE BANNER -->
+<div class="sw">
+  <div class="scard">
+    <div class="sleft">
+      <div class="bscore">76</div>
+      <div class="ssub">Pattern Fit Score / 100</div>
+      <span class="sbadge">☀️ High-Growth, Highly Seasonal</span>
+    </div>
+    <div class="bars">
+      <div class="br"><div class="bl"><span>Market Growth Rate</span><span>85</span></div><div class="track"><div class="fill" style="width:85%"></div></div></div>
+      <div class="br"><div class="bl"><span>Competitive Fragmentation</span><span>88</span></div><div class="track"><div class="fill" style="width:88%"></div></div></div>
+      <div class="br"><div class="bl"><span>Product Improvement Headroom</span><span>90</span></div><div class="track"><div class="fill amber" style="width:90%"></div></div></div>
+      <div class="br"><div class="bl"><span>Brand Differentiation Potential</span><span>82</span></div><div class="track"><div class="fill amber" style="width:82%"></div></div></div>
+      <div class="br"><div class="bl"><span>Seasonality Risk</span><span>45</span></div><div class="track"><div class="fill violet" style="width:45%"></div></div></div>
+      <div class="br"><div class="bl"><span>Margin Structure</span><span>68</span></div><div class="track"><div class="fill" style="width:68%"></div></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- PILLS -->
+<div class="pw">
+  <div class="pills">
+    <button class="pill on" data-s="overview">Overview</button>
+    <button class="pill" data-s="market">Market</button>
+    <button class="pill" data-s="amazon">Amazon Landscape</button>
+    <button class="pill" data-s="painpoints">Pain Points</button>
+    <button class="pill" data-s="competitors">Competitors</button>
+    <button class="pill" data-s="consumer">Consumer Trends</button>
+    <button class="pill" data-s="swot">SWOT</button>
+    <button class="pill" data-s="opportunity">Opportunity</button>
+  </div>
+</div>
+
+<!-- ══════════════════════════════ OVERVIEW ══════════════════════════════ -->
+<section class="sec on" id="s-overview">
+  <div class="sec-hdr"><div class="sec-tag">01 · Overview</div><h2>Executive Summary</h2></div>
+
+  <div class="callout c-warn">
+    <span class="callout-ico">💡</span>
+    <span>The inflatable projector screen category is riding the "backyard cinema" and "Experiential Yard" trend — outdoor screen market growing from $4.2B (2024) to a projected $9.1B by 2033. The category is dominated by generic, largely undifferentiated Chinese-manufactured brands (XHYCPY, CZGBRO, Estgora, VEVOR) competing almost entirely on price. <strong>Every major brand shares the same unresolved complaint: wind instability.</strong> This is a category where product engineering — not marketing — is the clearest path to differentiation.</span>
+  </div>
+
+  <div class="grid">
+    <div class="card"><div class="card-ico">📊</div><h3>Category Size</h3><div class="val" style="font-size:1.1rem">Outdoor Screen Market</div><p class="desc">Global outdoor screen market valued at $4.2B (2024), projected to reach $9.1B by 2033. Outdoor projector market itself growing at 8.5% CAGR through 2035.</p></div>
+    <div class="card"><div class="card-ico">🎬</div><h3>Product Format</h3><div class="val" style="font-size:1.1rem">12ft–24ft Inflatable</div><p class="desc">Standard sizes range 12–24ft, front & rear projection capable, 16:9 aspect ratio, one-piece Oxford fabric construction, includes air blower + storage bag + stakes/ropes.</p></div>
+    <div class="card"><div class="card-ico">💰</div><h3>Price Range</h3><div class="val">$70–$250</div><p class="desc">Entry-level 12-14ft screens at $70-110. Mid-range 16-20ft at $130-200. Premium 21-24ft screens at $200-250+. Highly price-elastic, promo-driven category.</p></div>
+    <div class="card"><div class="card-ico">🏆</div><h3>Top-Selling ASIN</h3><div class="val">~5,000/mo</div><p class="desc">Leading ASIN (B0G44NHJ5M) moves ~5,000 units/month per latest tracked data (June 2026), followed by ~2,000/mo and ~1,000/mo for #2 and #3 — steep sales concentration at the top.</p></div>
+    <div class="card amber-card"><div class="card-ico amber">⚠️</div><h3>#1 Universal Complaint</h3><div class="val amber">Wind Instability</div><p class="desc">Every brand across every price tier — from $70 budget screens to $250 premium units — shares the same unresolved issue: performance degrades sharply in any meaningful breeze.</p></div>
+    <div class="card amber-card"><div class="card-ico amber">📅</div><h3>Seasonality</h3><div class="val amber">Peaks in June</div><p class="desc">Search interest for outdoor projectors/screens peaks seasonally in June, aligned with backyard entertaining season (May–August in the Northern Hemisphere).</p></div>
+  </div>
+
+  <div class="blk">
+    <h3>Why This Category Fits the Pattern Model</h3>
+    <p>The inflatable projector screen category has three structural characteristics that make it attractive for a brand-building play: first, it is <strong>highly fragmented</strong> — no single brand holds durable market leadership, and most listings are near-identical generic products differentiated only by size and price; second, the entire category shares a well-documented, unresolved engineering problem (wind instability, blower noise, rear-projection light bleed) that opens a clear product differentiation lane; third, it benefits from a structural tailwind — the "Experiential Yard" trend is pushing consumers to treat backyard entertainment spaces as permanent investments rather than one-off purchases, which supports premiumization. A brand that solves the wind-stability problem with genuine engineering (reinforced frame, better tensioning system, quieter high-CFM blower) has a realistic path to category leadership rather than fighting on price alone.</p>
+    <div class="tags">
+      <span class="tag tg">Fast-growing category ($4.2B → $9.1B by 2033)</span>
+      <span class="tag tg">Highly fragmented — no dominant brand</span>
+      <span class="tag ta">Universal unresolved pain point (wind stability)</span>
+      <span class="tag ta">Highly seasonal — concentrated May–Aug demand</span>
+      <span class="tag tv">Premiumization trend ("Experiential Yard")</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════ MARKET ══════════════════════════════ -->
+<section class="sec" id="s-market">
+  <div class="sec-hdr"><div class="sec-tag">02 · Market</div><h2>Market Intelligence</h2></div>
+
+  <div class="grid">
+    <div class="card"><div class="card-ico">📈</div><h3>Outdoor Screen Market</h3><div class="val">$4.2B → $9.1B</div><p class="desc">Global outdoor screen market valued at $4.2B in 2024, growing to $4.8B in 2025, and projected to reach $9.1B by 2033 — implying an accelerating growth curve as the category matures.</p></div>
+    <div class="card"><div class="card-ico">🎥</div><h3>Outdoor Projector Market</h3><div class="val">8.5% CAGR</div><p class="desc">The complementary outdoor projector market was valued at $2.45B in 2025, projected to reach $5.5B by 2035 at 8.5% CAGR — direct signal of parallel growth in the ecosystem this screen category depends on.</p></div>
+    <div class="card"><div class="card-ico">🏠</div><h3>Home Entertainment Share</h3><div class="val">$1.2B → $2.7B</div><p class="desc">Home Entertainment is the dominant application segment within outdoor projection, growing from $1.2B (2024) to a projected $2.7B (2035) — driven specifically by outdoor movie nights and backyard gatherings.</p></div>
+    <div class="card"><div class="card-ico">📊</div><h3>Global Projector Screen Market</h3><div class="val">$48.85B → $64.72B</div><p class="desc">The broader projector screen market (indoor + outdoor, all formats) is valued at $48.85B in 2026, projected to reach $64.72B by 2033 at 4.1% CAGR — the inflatable outdoor niche is a small but fast-growing slice.</p></div>
+    <div class="card amber-card"><div class="card-ico amber">🔍</div><h3>Amazon Search Volume</h3><div class="val amber">~1,900/week</div><p class="desc">Weekly US search volume for "inflatable projector screen for outside" was ~1,900 in early June 2026, with the keyword's Search Frequency Rank climbing over 12,000 positions week-over-week — signaling sharp seasonal spike.</p></div>
+    <div class="card amber-card"><div class="card-ico amber">🎯</div><h3>Market Concentration</h3><div class="val amber">33.7% / Top 3</div><p class="desc">The top 3 ASINs for the core keyword capture 33.7% of total click share but only 18.4% of conversion share — indicating meaningful room for a better-converting, better-differentiated product to break through.</p></div>
+  </div>
+
+  <div class="blk">
+    <h3>Structural Growth Drivers</h3>
+    <div class="bchart" style="margin-top:.75rem">
+      <div class="brow"><div class="brow-lbl">"Experiential Yard" trend</div><div class="brow-fill" style="width:90%">Very Strong</div></div>
+      <div class="brow"><div class="brow-lbl">Affordable high-lumen projectors</div><div class="brow-fill" style="width:85%">Strong</div></div>
+      <div class="brow"><div class="brow-lbl">E-commerce channel expansion</div><div class="brow-fill" style="width:82%">Strong</div></div>
+      <div class="brow"><div class="brow-lbl">Portability/ease-of-setup demand</div><div class="brow-fill amber" style="width:78%">Strong (41.7% share)</div></div>
+      <div class="brow"><div class="brow-lbl">Premium segment growth</div><div class="brow-fill" style="width:75%">Outpacing value segment</div></div>
+      <div class="brow"><div class="brow-lbl">4K/16:9 HD compatibility shift</div><div class="brow-fill amber" style="width:70%">Growing</div></div>
+    </div>
+  </div>
+
+  <div class="two">
+    <div class="blk">
+      <h3>🟢 Market Tailwinds</h3>
+      <ul style="list-style:none;padding:0">
+        <li style="padding:.32rem 0;font-size:.81rem;color:var(--t2)">✅ "Experiential Yard" trend treats backyard cinema as a permanent investment, not a one-off toy</li>
+        <li style="padding:.32rem 0;font-size:.81rem;color:var(--t2)">✅ Premium segment (fixed-frame, high-durability) growing faster than the value segment</li>
+        <li style="padding:.32rem 0;font-size:.81rem;color:var(--t2)">✅ Consumer projectors have gotten cheaper and brighter, lowering the barrier to a full setup</li>
+        <li style="padding:.32rem 0;font-size:.81rem;color:var(--t2)">✅ Strong seasonal search spike creates a concentrated, predictable demand window</li>
+        <li style="padding:.32rem 0;font-size:.81rem;color:var(--t2)">✅ Low conversion share among top search-ranked ASINs signals room for a superior product to win share</li>
+      </ul>
+    </div>
+    <div class="blk">
+      <h3>🔴 Market Headwinds</h3>
+      <ul style="list-style:none;padding:0">
+        <li style="padding:.32rem 0;font-size:.81rem;color:var(--t2)">⚠️ Extreme seasonality concentrates revenue into a 3-4 month window (May–August)</li>
+        <li style="padding:.32rem 0;font-size:.81rem;color:var(--t2)">⚠️ Category is price-anchored low ($70-110 entry tier dominates search volume)</li>
+        <li style="padding:.32rem 0;font-size:.81rem;color:var(--t2)">⚠️ Near-zero brand loyalty — consumers shop by size/price, not brand name</li>
+        <li style="padding:.32rem 0;font-size:.81rem;color:var(--t2)">⚠️ Low switching cost for competitors to copy any visible product improvement</li>
+        <li style="padding:.32rem 0;font-size:.81rem;color:var(--t2)">⚠️ China-origin tariff exposure affects landed cost for all players equally</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════ AMAZON LANDSCAPE ══════════════════════════════ -->
+<section class="sec" id="s-amazon">
+  <div class="sec-hdr"><div class="sec-tag">03 · Amazon Landscape</div><h2>Amazon Category Performance Analysis</h2></div>
+
+  <div class="callout c-info"><span class="callout-ico">💡</span><span>The category shows a classic "long tail with a thin head" structure — a handful of ASINs capture the majority of visible search real estate, but conversion is surprisingly diffuse. This is a signal that <strong>no incumbent has actually won the category on product quality</strong> — they've won on search optimization and price, leaving room for a genuinely better product to break through.</span></div>
+
+  <div class="tw">
+    <table>
+      <thead><tr><th>Rank</th><th>Est. Monthly Sales</th><th>Signal</th></tr></thead>
+      <tbody>
+        <tr><td>#1 (B0G44NHJ5M)</td><td>~5,000 units/mo</td><td>Clear category leader by volume, but not by brand loyalty — mostly generic search-optimized listing</td></tr>
+        <tr><td>#2 (B0DGBXPKMW)</td><td>~2,000 units/mo</td><td>Less than half the volume of #1 — steep drop-off after the leader</td></tr>
+        <tr><td>#3 (B07JZ167G8)</td><td>~1,000 units/mo</td><td>Long-running listing (older ASIN) still performing, suggesting durable demand for basic functional screens</td></tr>
+        <tr><td>Long tail (42 more tracked)</td><td>300–1,000 units/mo each</td><td>45 total tracked products in the core keyword — highly fragmented, no single brand dominance</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="grid">
+    <div class="card"><div class="card-ico">🔎</div><h3>Search Frequency Rank</h3><div class="val" style="font-size:1.3rem">#102,072</div><p class="desc">Core keyword "inflatable projector screen for outside" — climbing over 12,000 positions week-over-week entering peak season, confirming strong seasonal timing sensitivity.</p></div>
+    <div class="card"><div class="card-ico">🎯</div><h3>Top-3 Click Share</h3><div class="val">33.7%</div><p class="desc">Top 3 ASINs capture only about a third of total clicks — well below the concentration typical of more mature, brand-consolidated categories.</p></div>
+    <div class="card"><div class="card-ico">💳</div><h3>Top-3 Conversion Share</h3><div class="val">18.4%</div><p class="desc">Conversion share is even more diffuse than click share — meaning shoppers are actively comparing multiple listings before buying, rather than defaulting to the top result.</p></div>
+    <div class="card"><div class="card-ico">🏭</div><h3>Active Brands Tracked</h3><div class="val">45</div><p class="desc">45 distinct products tracked in the core search result — XHYCPY, CZGBRO, Estgora, VEVOR, AZXRHWYGS and others compete in a near-commodity market.</p></div>
+  </div>
+
+  <div class="two">
+    <div class="blk">
+      <h3>What the Data Suggests</h3>
+      <ul style="list-style:none;padding:0">
+        <li style="padding:.35rem 0;font-size:.81rem;color:var(--t2)">📌 Shoppers actively compare listings — low conversion concentration means Listing quality still moves the needle</li>
+        <li style="padding:.35rem 0;font-size:.81rem;color:var(--t2)">📌 The category rewards being the "obviously better" option in a side-by-side comparison, not just the top search result</li>
+        <li style="padding:.35rem 0;font-size:.81rem;color:var(--t2)">📌 Older ASINs (like #3) still perform — suggesting review count and social proof carry real weight</li>
+        <li style="padding:.35rem 0;font-size:.81rem;color:var(--t2)">📌 No brand has built a "Brand Store" moat or lifestyle content ecosystem around this product yet</li>
+      </ul>
+    </div>
+    <div class="blk">
+      <h3>Pattern Quick Wins for a New Entrant</h3>
+      <ul style="list-style:none;padding:0">
+        <li style="padding:.35rem 0;font-size:.81rem;color:var(--t2)">✅ Lead Listing images with a "stable in wind" demonstration — directly addresses the #1 objection</li>
+        <li style="padding:.35rem 0;font-size:.81rem;color:var(--t2)">✅ A+ Content comparison module: "us vs. typical inflatable screens" on wind stability, noise, wrinkles</li>
+        <li style="padding:.35rem 0;font-size:.81rem;color:var(--t2)">✅ Front-load PPC investment ahead of the June search spike, not during it</li>
+        <li style="padding:.35rem 0;font-size:.81rem;color:var(--t2)">✅ Bundle with a complementary projector or portable speaker to raise AOV and differentiate from single-SKU competitors</li>
+        <li style="padding:.35rem 0;font-size:.81rem;color:var(--t2)">✅ Build a genuine Brand Store — no competitor has done this yet in the category</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════ PAIN POINTS ══════════════════════════════ -->
+<section class="sec" id="s-painpoints">
+  <div class="sec-hdr"><div class="sec-tag amber">04 · Product Pain Points</div><h2>Category-Wide Complaints — The Product Roadmap Writes Itself</h2></div>
+
+  <div class="callout c-red"><span class="callout-ico">⚠️</span><span>Across every brand and price tier, the same handful of complaints recur in reviews and forum discussions. <strong>None of these have been meaningfully solved by any current market player</strong> — this is the clearest engineering-led differentiation opportunity in the category.</span></div>
+
+  <div class="painpoint-card">
+    <div class="painpoint-hdr">
+      <span class="painpoint-name">💨 Wind Instability</span>
+      <span class="painpoint-severity sev-high">Highest Severity</span>
+    </div>
+    <div class="painpoint-desc">The single most universal complaint across every brand: screens flutter, balloon, or become unusable in anything beyond a light breeze. One reviewer specifically noted concern about "flutter with side breeze" even in favorable conditions; another cross-platform reviewer state plainly "works great at night... just not in the wind." Multiple product listings explicitly disclaim: "not suitable for use in windy conditions."</div>
+    <div class="painpoint-fix">→ Fix: Reinforced multi-point ground anchoring system, wind-vent mesh panels, or a semi-rigid perimeter frame that resists flutter without sacrificing portability.</div>
+  </div>
+
+  <div class="painpoint-card">
+    <div class="painpoint-hdr">
+      <span class="painpoint-name">〰️ Wrinkles &amp; Creases</span>
+      <span class="painpoint-severity sev-high">High Severity</span>
+    </div>
+    <div class="painpoint-desc">Forum users on AVSForum note "every user/owner's photo shows the screen with wrinkles in the screen's surface" as a persistent issue — even among products explicitly marketed as "wrinkle-free." Most brands acknowledge this is "normal" out of the box and recommend steaming, which is a poor customer experience for a premium-priced item.</div>
+    <div class="painpoint-fix">→ Fix: Improved fabric tensioning at the frame edges, better factory folding/packaging methods, and honest "steam before first use" guidance built into unboxing content rather than left to customer discovery via 1-star reviews.</div>
+  </div>
+
+  <div class="painpoint-card">
+    <div class="painpoint-hdr">
+      <span class="painpoint-name">🔊 Blower Noise</span>
+      <span class="painpoint-severity sev-med">Medium Severity</span>
+    </div>
+    <div class="painpoint-desc">Multiple reviews flag the continuous-run air blower as too loud for comfortable movie-watching: "the whole system would benefit... the blower is loud. Put it in a box with vents to direct the sound away from you." Some brands market "silent blower" but this claim is inconsistently delivered.</div>
+    <div class="painpoint-fix">→ Fix: Genuinely low-dB blower motor as a headline spec (with dB rating disclosed, not just "quiet" marketing language), or a sound-dampening enclosure included in the box.</div>
+  </div>
+
+  <div class="painpoint-card">
+    <div class="painpoint-hdr">
+      <span class="painpoint-name">💡 Rear-Projection Light Bleed</span>
+      <span class="painpoint-severity sev-med">Medium Severity</span>
+    </div>
+    <div class="painpoint-desc">A detailed reviewer notes that when using rear projection, "streetlights behind the screen were also easily noticeable" and recommends "the whole system would benefit greatly from having a removable opaque panel on the back side" — a feature no competitor currently offers.</div>
+    <div class="painpoint-fix">→ Fix: Optional detachable opaque rear panel/backdrop accessory, explicitly marketed as solving backyard ambient-light interference for rear-projection setups.</div>
+  </div>
+
+  <div class="painpoint-card">
+    <div class="painpoint-hdr">
+      <span class="painpoint-name">🎯 Hot-Spotting with Non-Offset Projectors</span>
+      <span class="painpoint-severity sev-med">Medium Severity</span>
+    </div>
+    <div class="painpoint-desc">One detailed review explains: "you will need a projector that can be offset — otherwise the 'burn through/hot spot' would be completely unacceptable" when using rear projection. This is a compatibility issue most listings don't address at all, leading to post-purchase disappointment for buyers with standard (non-offset) DLP projectors.</div>
+    <div class="painpoint-fix">→ Fix: Clear compatibility guidance in Listing content — which projector throw types work best for front vs. rear projection, potentially bundled with a compatible projector recommendation.</div>
+  </div>
+
+  <div class="painpoint-card">
+    <div class="painpoint-hdr">
+      <span class="painpoint-name">🪡 Visible Seams</span>
+      <span class="painpoint-severity sev-med">Medium Severity</span>
+    </div>
+    <div class="painpoint-desc">A Best Buy reviewer notes: "there is a seam 18 inches up from the bottom on the white screen. Not super noticeable, i just know its there" — a minor but recurring construction quality signal across multiple brands' one-piece designs.</div>
+    <div class="painpoint-fix">→ Fix: True single-panel seamless construction for the primary viewing area, reserving seams only for non-visible structural edges.</div>
+  </div>
+
+  <div class="blk">
+    <h3>Pain Point Severity Summary</h3>
+    <div class="bchart" style="margin-top:.75rem">
+      <div class="brow"><div class="brow-lbl">Wind instability</div><div class="brow-fill red" style="width:95%">Critical / Universal</div></div>
+      <div class="brow"><div class="brow-lbl">Wrinkles/creases</div><div class="brow-fill red" style="width:80%">High / Widespread</div></div>
+      <div class="brow"><div class="brow-lbl">Blower noise</div><div class="brow-fill amber" style="width:65%">Medium / Common</div></div>
+      <div class="brow"><div class="brow-lbl">Rear-projection light bleed</div><div class="brow-fill amber" style="width:55%">Medium / Niche but real</div></div>
+      <div class="brow"><div class="brow-lbl">Hot-spotting compatibility</div><div class="brow-fill amber" style="width:50%">Medium / Education gap</div></div>
+      <div class="brow"><div class="brow-lbl">Visible seams</div><div class="brow-fill" style="width:35%">Low / Cosmetic</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════ COMPETITORS ══════════════════════════════ -->
+<section class="sec" id="s-competitors">
+  <div class="sec-hdr"><div class="sec-tag">05 · Competitive Landscape</div><h2>Competitor Analysis</h2></div>
+
+  <div class="tw">
+    <table>
+      <thead><tr><th>Brand</th><th>Size Range</th><th>Price</th><th>Key Claim</th><th>Est. Reviews</th><th>Notable Gap</th></tr></thead>
+      <tbody>
+        <tr><td><strong>XHYCPY</strong></td><td>15–21ft</td><td>$90–180</td><td>Full size range, storefront presence, multiple SKUs</td><td>High volume across SKUs</td><td>No wind-stability innovation; generic branding across entire catalog</td></tr>
+        <tr><td><strong>CZGBRO</strong></td><td>14ft</td><td>$100–130</td><td>"Non-detachable" one-piece design to reduce creases</td><td>Moderate</td><td>Addresses wrinkles partially but not wind stability</td></tr>
+        <tr><td><strong>Estgora</strong></td><td>14ft</td><td>$80–110</td><td>Amazon Best Seller ranking in category</td><td>High</td><td>Budget-tier, minimal differentiation beyond price</td></tr>
+        <tr><td><strong>VEVOR</strong></td><td>14–20ft</td><td>$70–130</td><td>"Wrinkle-Free" Oxford fabric, "Silent Blower" claims</td><td>High (multi-platform: Amazon, eBay, Newegg)</td><td>Marketing claims (wrinkle-free, silent) not consistently validated by reviews</td></tr>
+        <tr><td><strong>AZXRHWYGS</strong></td><td>14ft</td><td>$90–120</td><td>Indoor + outdoor dual-use positioning</td><td>Low-moderate</td><td>Weak brand recognition, thin content</td></tr>
+        <tr><td><strong>Kodak</strong></td><td>14.5ft</td><td>$150–200</td><td>Trusted consumer electronics brand halo, sold via Best Buy</td><td>Strong sentiment, brand trust</td><td>Premium price without corresponding engineering improvement on core pain points</td></tr>
+        <tr><td><strong>Holiday Styling</strong></td><td>19ft</td><td>$150–200</td><td>"Thick airtight material," detailed/honest reviews present</td><td>Established, older listing</td><td>Reviewer explicitly notes wind flutter concerns even at favorable angles</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="blk">
+    <h3>Competitive Position Summary</h3>
+    <p>This category has no "Anova" or "Clean Skin Club" — no brand has broken out with a genuinely superior product and captured durable category leadership. Kodak brings a trusted brand name via Best Buy distribution, but doesn't appear to have solved the fundamental wind-stability and noise issues any better than generic competitors. VEVOR makes bold marketing claims ("wrinkle-free," "silent blower") across a wide multi-platform presence (Amazon, eBay, Newegg) but real-world reviews suggest these claims are inconsistently delivered. <strong>The entire competitive set is vulnerable to a brand that actually solves the wind-stability problem and can prove it with real demonstration content</strong> — video of the screen holding steady in genuine outdoor wind conditions would be a uniquely credible differentiator no competitor currently owns.</p>
+    <div class="tags">
+      <span class="tag tg">No brand has solved wind stability — wide open differentiation lane</span>
+      <span class="tag tg">Kodak brand halo unmatched by product engineering</span>
+      <span class="tag ta">VEVOR's marketing claims create a credibility gap to exploit</span>
+      <span class="tag tv">No competitor has built genuine lifestyle/Brand Store content</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════ CONSUMER TRENDS ══════════════════════════════ -->
+<section class="sec" id="s-consumer">
+  <div class="sec-hdr"><div class="sec-tag">06 · Consumer Trends</div><h2>Consumer Demand Shift — From Novelty to Permanent Fixture</h2></div>
+
+  <div class="callout c-info"><span class="callout-ico">🏡</span><span>The 2026 "Backyard Big Screen" trend report frames this shift precisely: outdoor cinema setups are evolving from "simple seasonal setups into a permanent, high-tech sanctuary space" — part of a broader "Experiential Yard" movement where homeowners prioritize activities over fixed structures like pools.</span></div>
+
+  <div class="grid">
+    <div class="card"><div class="card-ico">🏡</div><h3>"Experiential Yard" Movement</h3><div class="val" style="font-size:1.1rem">Activities &gt; Structures</div><p class="desc">Homeowners increasingly prioritize backyard activity zones (movie nights, entertaining) over traditional fixed investments like pools — favoring flexible, high-impact setups.</p></div>
+    <div class="card"><div class="card-ico">📅</div><h3>Seasonal Search Peak</h3><div class="val">June</div><p class="desc">Search interest for outdoor projectors and screens peaks specifically in June, aligned tightly with the start of summer entertaining season in the Northern Hemisphere.</p></div>
+    <div class="card"><div class="card-ico">📦</div><h3>Portability Priority</h3><div class="val">41.7%</div><p class="desc">Buyers increasingly favor portability as a purchase driver — 41.7% share — alongside ease of setup (foldable/inflatable formats specifically favored over rigid alternatives.</p></div>
+    <div class="card"><div class="card-ico">💎</div><h3>Premium Segment Growth</h3><div class="val">Outpacing Value Tier</div><p class="desc">The premium segment — fixed-frame, high-durability screens — is expected to outpace the value/budget segment, as consumers show willingness to invest in durable, aesthetically pleasing permanent outdoor setups.</p></div>
+  </div>
+
+  <div class="two">
+    <div class="blk">
+      <h3>What Today's Buyer Actually Wants</h3>
+      <ul style="list-style:none;padding:0">
+        <li style="padding:.35rem 0;font-size:.81rem;color:var(--t2)">🎯 A screen that reliably works in real backyard conditions — not just still-air demo videos</li>
+        <li style="padding:.35rem 0;font-size:.81rem;color:var(--t2)">🎯 High "gain" surfaces for better visibility against ambient light (streetlights, porch lights, dusk viewing)</li>
+        <li style="padding:.35rem 0;font-size:.81rem;color:var(--t2)">🎯 16:9 HD/4K compatibility to match increasingly capable home projectors</li>
+        <li style="padding:.35rem 0;font-size:.81rem;color:var(--t2)">🎯 A setup that looks intentional and attractive in the yard, not like a temporary inflatable toy</li>
+        <li style="padding:.35rem 0;font-size:.81rem;color:var(--t2)">🎯 Confidence that the product will still work well after multiple seasons of storage/setup cycles</li>
+      </ul>
+    </div>
+    <div class="blk">
+      <h3>Implications for Positioning</h3>
+      <ul style="list-style:none;padding:0">
+        <li style="padding:.35rem 0;font-size:.81rem;color:var(--t2)">💡 Shift messaging from "fun party accessory" to "backyard cinema investment"</li>
+        <li style="padding:.35rem 0;font-size:.81rem;color:var(--t2)">💡 Content should show real outdoor conditions — mild wind, dusk lighting, actual family use — not just staged studio shots</li>
+        <li style="padding:.35rem 0;font-size:.81rem;color:var(--t2)">💡 A slightly higher price point is defensible if paired with visible durability and wind-stability proof</li>
+        <li style="padding:.35rem 0;font-size:.81rem;color:var(--t2)">💡 Bundle strategy (screen + storage solution + accessories) supports the "permanent fixture" narrative better than a single SKU</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════ SWOT ══════════════════════════════ -->
+<section class="sec" id="s-swot">
+  <div class="sec-hdr"><div class="sec-tag">07 · SWOT</div><h2>Category Entry SWOT Analysis</h2></div>
+
+  <div class="swot">
+    <div class="sw2 sw2-s"><div class="sw2-lbl">💪 Strengths (of a well-engineered new entrant)</div><ul>
+      <li>Clear, well-documented product gap (wind stability) that no competitor has solved</li>
+      <li>Low barrier to credible differentiation — visible engineering fix beats marketing claims</li>
+      <li>Category has no dominant "hero brand" to displace — genuinely open field</li>
+      <li>Bundling potential with projectors/speakers to build a complete "backyard cinema kit" narrative</li>
+      <li>Premium segment growing faster than budget tier — room for a higher price point if justified</li>
+    </ul></div>
+    <div class="sw2 sw2-w"><div class="sw2-lbl">⚠️ Weaknesses</div><ul>
+      <li>Extreme seasonality concentrates revenue risk into a 3-4 month window</li>
+      <li>Low switching cost means any visible innovation can be copied quickly by incumbents</li>
+      <li>Category price-anchored low; premium positioning requires strong proof, not just claims</li>
+      <li>No existing brand equity or review base for a new entrant — starts from zero</li>
+      <li>Physical engineering R&D (frame/tensioning system) requires more investment than typical Listing optimization</li>
+    </ul></div>
+    <div class="sw2 sw2-o"><div class="sw2-lbl">🚀 Opportunities</div><ul>
+      <li>"Wind-stable" as a headline, provable claim — genuinely uncontested positioning</li>
+      <li>Low top-3 conversion share (18.4%) signals real room for a better-converting Listing to break through</li>
+      <li>"Experiential Yard" trend supports premiumization and multi-season durability narrative</li>
+      <li>No competitor has built a real Brand Store or lifestyle content ecosystem — open lane</li>
+      <li>Bundle opportunities with adjacent categories (outdoor speakers, string lights, portable projectors)</li>
+      <li>Rear-projection opaque panel accessory is an unclaimed, easy-to-market product extension</li>
+    </ul></div>
+    <div class="sw2 sw2-t"><div class="sw2-lbl">⚡ Threats</div><ul>
+      <li>Incumbents can rapidly copy any successful design change (low-cost Chinese manufacturing base for all players)</li>
+      <li>Extreme seasonality means a single bad season materially impacts annual performance</li>
+      <li>Category may face continued price compression as more sellers enter via dropship/private label</li>
+      <li>China-origin tariff exposure affects cost structure uniformly across all competitors</li>
+      <li>Weather-related product failures (even if rare) can generate outsized negative review impact in a visually-driven category</li>
+    </ul></div>
+  </div>
+
+  <div class="blk">
+    <h3>SWOT Synthesis</h3>
+    <p>The clearest strategic path in this category is <strong>S+O</strong>: pair genuine wind-stability engineering (Strength) with the category's uncontested positioning gap and low top-3 conversion concentration (Opportunity) to build a credible, provable "the one that actually works outside" brand story — something no current competitor can claim with real evidence. The primary risk to manage is <strong>W+T</strong>: because engineering improvements are visible and can be reverse-engineered quickly, speed to market and continuous iteration matter more here than in categories with stronger IP protection. A successful entrant should expect a 12-18 month window of genuine differentiation before incumbents catch up on the most visible improvements.</p>
+  </div>
+</section>
+
+<!-- ══════════════════════════════ OPPORTUNITY ══════════════════════════════ -->
+<section class="sec" id="s-opportunity">
+  <div class="sec-hdr"><div class="sec-tag">08 · Opportunity Map</div><h2>Pattern Opportunity Map</h2></div>
+
+  <div class="callout c-warn"><span class="callout-ico">🎯</span><span>Given the category's strong seasonality and fragmented competitive set, the highest-conviction path is a <strong>product-led entry</strong> — solving the wind-stability problem first, then scaling distribution and content around that provable differentiation. Conservative Year 1 GMV target for a well-executed entry: <strong>$800K–$1.5M</strong>, concentrated heavily in the May–August selling window.</span></div>
+
+  <div class="opp-grid">
+    <div class="opp amber-opp"><span class="pr pr-fix">Core Fix</span><div class="opp-num">OPP-01</div><h3>Wind-Stability Engineering</h3><p>Develop a reinforced multi-point ground anchoring system and/or semi-rigid perimeter frame that meaningfully outperforms every current competitor in real outdoor wind conditions. This is the single highest-leverage product investment in the category.</p><div class="opp-imp amber"><span>⚡ <strong>3-6 months R&D</strong></span><span>💰 <strong>Category-defining differentiation</strong></span></div></div>
+
+    <div class="opp amber-opp"><span class="pr pr-fix">Core Fix</span><div class="opp-num">OPP-02</div><h3>Low-Noise Blower + Verified dB Rating</h3><p>Source or engineer a genuinely quiet blower motor and disclose an actual decibel rating in Listing content — turning a vague "silent" marketing claim into a verifiable, trust-building spec.</p><div class="opp-imp amber"><span>⚡ <strong>1-2 months</strong></span><span>💰 <strong>Credibility differentiator</strong></span></div></div>
+
+    <div class="opp"><span class="pr pr-hi">High Priority</span><div class="opp-num">OPP-03</div><h3>"Wind Test" Proof Content</h3><p>Produce real (not staged) video content showing the screen holding steady in genuine outdoor wind conditions — the single most persuasive content asset this category has never seen from any competitor.</p><div class="opp-imp"><span>⚡ <strong>Launch-ready</strong></span><span>💰 <strong>Directly targets #1 objection</strong></span></div></div>
+
+    <div class="opp"><span class="pr pr-hi">High Priority</span><div class="opp-num">OPP-04</div><h3>Detachable Opaque Rear Panel Accessory</h3><p>Launch an accessory solving the rear-projection light-bleed complaint — an easy, low-cost product extension that no competitor currently offers, useful for both differentiation and incremental AOV.</p><div class="opp-imp"><span>⚡ <strong>2-3 months</strong></span><span>💰 <strong>Unclaimed product extension</strong></span></div></div>
+
+    <div class="opp"><span class="pr pr-hi">High Priority</span><div class="opp-num">OPP-05</div><h3>Pre-Season PPC Front-Loading</h3><p>Deploy Sponsored Products and Sponsored Brand campaigns beginning in March/April — ahead of the June search spike — to build review velocity and BSR position before peak-season competition intensifies.</p><div class="opp-imp"><span>⚡ <strong>Feb–Apr annually</strong></span><span>💰 <strong>Captures peak-season demand</strong></span></div></div>
+
+    <div class="opp"><span class="pr pr-md">Medium Priority</span><div class="opp-num">OPP-06</div><h3>"Backyard Cinema Kit" Bundle</h3><p>Bundle the screen with a compatible offset-throw projector and/or portable speaker to raise AOV, differentiate from single-SKU competitors, and directly support the "permanent fixture" positioning consumers increasingly want.</p><div class="opp-imp"><span>⚡ <strong>3-4 months</strong></span><span>💰 <strong>+$40-80 AOV</strong></span></div></div>
+
+    <div class="opp"><span class="pr pr-md">Medium Priority</span><div class="opp-num">OPP-07</div><h3>Amazon Brand Store Build</h3><p>Build a genuine lifestyle-oriented Brand Store — a category first — featuring real outdoor use content, seasonal styling ideas, and cross-sell into complementary outdoor entertainment products.</p><div class="opp-imp"><span>⚡ <strong>1-2 months</strong></span><span>💰 <strong>Brand equity moat</strong></span></div></div>
+
+    <div class="opp"><span class="pr pr-md">Medium Priority</span><div class="opp-num">OPP-08</div><h3>Off-Season Storage/Protection Accessory</h3><p>Address the category's implicit "will it survive multiple seasons" concern with a purpose-built storage case or protective cover — supporting the durability narrative that premiumization trends reward.</p><div class="opp-imp"><span>⚡ <strong>2-3 months</strong></span><span>💰 <strong>Durability narrative support</strong></span></div></div>
+  </div>
+</section>
+
+<footer>
+  <div class="fb"><div class="nlogo" style="width:22px;height:22px;font-size:.6rem">P</div>Pattern Intelligence · Inflatable Projector Screen Category Report</div>
+  <span>Generated July 2026 · Confidential · Internal BD use only</span>
+</footer>
+
+<script>
+function show(id){
+  document.querySelectorAll('.sec').forEach(s=>s.classList.remove('on'));
+  const el=document.getElementById('s-'+id);
+  if(el)el.classList.add('on');
+  document.querySelectorAll('.pill').forEach(p=>p.classList.toggle('on',p.dataset.s===id));
+  document.querySelectorAll('.nlinks a').forEach(a=>a.classList.toggle('on',a.id==='na-'+id));
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+document.querySelectorAll('.pill').forEach(p=>{
+  p.addEventListener('click',()=>show(p.dataset.s));
+});
+</script>
+</body>
+</html>
